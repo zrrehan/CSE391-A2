@@ -4,6 +4,8 @@
     width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
+    margin: auto;
+    text-align: center;
 }
 
 .time {

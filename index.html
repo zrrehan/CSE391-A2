@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="common-styles.css">
     <link rel="stylesheet" href="fortune-teller/fortune-teller.css">
     <link rel="stylesheet" href="stopwatch/stopwatch.css">
+    <link rel="stylesheet" href="todo/todo.css">
 </head>
 <body>
     <!-- fortune teller -->
@@ -24,7 +25,7 @@
 
         <script src = "fortune-teller/fortune-teller.js"></script>
     </div>
-
+    <hr>
     <!-- stopwatch -->
     <div class = "stopwatch">
        
@@ -36,6 +37,23 @@
         </div>
       
         <script src = "stopwatch/stopwatch.js"></script>
+    </div>
+
+    <hr>
+    <div class = "todoList">
+        <div id = "todo-input">
+            <input type="text" id = "task-input">
+            <button class = "btn" id ="add-task-btn">ADD TASK</button>
+        </div>
+
+        <div class = "all-tasks">
+            <div class = "single-task">
+                <input type="checkbox">
+                <p>New task</p>
+                <button class = "btn btn-red">Delete</button>
+            </div>
+        </div>
+        <script type="module" src = "todo/todo.js"></script>
     </div>
 </body>
 </html>
