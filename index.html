@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common-styles.css">
+    <link rel="stylesheet" href="fortune-teller/fortune-teller.css">
+    <link rel="stylesheet" href="stopwatch/stopwatch.css">
+</head>
+<body>
+    <!-- fortune teller -->
+    <div id = "fortume-teller">
+        <div id = "fortune-box" class = "red-theme">
+            <p>Tonight, you will follow a light that saves you once… and abandons you when you need it most.</p>
+        </div>
+
+        <div id = "fortune-theme-btns">
+            <button class = "btn btn-red"></button>
+            <button class = "btn btn-yellow"></button>
+            <button class = "btn btn-green"></button>
+            <button class = "btn btn-blue"></button>
+        </div>
+
+        <script src = "fortune-teller/fortune-teller.js"></script>
+    </div>
+
+    <!-- stopwatch -->
+    <div class = "stopwatch">
+       
+        <p class = "time">0</p>
+        <div>
+            <button id = "start" class="btn">Start</button>
+            <button id = "pause" class="btn">Pause</button>
+            <button id = "reset" class="btn">Reset</button>
+        </div>
+      
+        <script src = "stopwatch/stopwatch.js"></script>
+    </div>
+</body>
+</html>

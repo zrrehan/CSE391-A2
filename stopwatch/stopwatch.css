@@ -1,0 +1,11 @@
+.stopwatch {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.time {
+    font-size: 100px;
+}
