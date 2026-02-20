@@ -39,6 +39,11 @@ document.querySelectorAll("#delete-task-btn").forEach((btn) => {
 
 document.querySelector("#add-task-btn").addEventListener("click", () => {
     const inputField = document.querySelector("#task-input").value;
+    if(inputField === "") {
+        alert("Input task first!");
+        return
+    }
+    
     createTask({
         title: inputField, 
         completed: false,
