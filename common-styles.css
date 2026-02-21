@@ -3,7 +3,6 @@
     padding: 0px;
 }
 
-/* ===== Base Button ===== */
 .btn {
   padding: 10px 18px;
   border: none;
@@ -17,7 +16,6 @@
     font-size: 15px;
 }
 
-/* ===== Color Variants ===== */
 .btn-red {
   background-color: #e53935;
 }
@@ -44,7 +42,7 @@
 
 .btn-yellow {
   background-color: #fbc02d;
-  color: #222; /* better contrast */
+  color: #222; 
 }
 
 .btn-yellow:hover {

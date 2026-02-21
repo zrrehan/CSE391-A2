@@ -6,7 +6,6 @@ export function getTasks() {
 }
 
 export function createTask(taskData) {
-
     if (!taskData || typeof taskData !== "object") {
         console.error("Invalid task data");
         return;
@@ -36,19 +35,14 @@ export function updateTask(id, taskData) {
     }
 
     const tasks = getTasks();
-
-    // Find task by id
     const taskIndex = tasks.findIndex(task => task.id == id);
-
     if (taskIndex === -1) {
         console.error("Task not found");
         return;
     }
 
-    // Update only the provided properties
     tasks[taskIndex] = { ...tasks[taskIndex], ...taskData };
 
-    // Save back to localStorage
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 
     return tasks[taskIndex];
